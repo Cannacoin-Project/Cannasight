@@ -5,7 +5,7 @@ angular.module('insight').config(function($routeProvider) {
   $routeProvider.
     when('/block/:blockHash', {
       templateUrl: '/views/block.html',
-      title: 'Reddcoin Block '
+      title: 'Cannacoin Block '
     }).
     when('/block-index/:blockHeight', {
       controller: 'BlocksController',
@@ -13,7 +13,7 @@ angular.module('insight').config(function($routeProvider) {
     }).
     when('/tx/:txId/:v_type?/:v_index?', {
       templateUrl: '/views/transaction.html',
-      title: 'Reddcoin Transaction '
+      title: 'Cannacoin Transaction '
     }).
     when('/', {
       templateUrl: '/views/index.html',
@@ -21,15 +21,15 @@ angular.module('insight').config(function($routeProvider) {
     }).
     when('/blocks', {
       templateUrl: '/views/block_list.html',
-      title: 'Reddcoin Blocks solved Today'
+      title: 'Cannacoin Blocks solved Today'
     }).
     when('/blocks-date/:blockDate/:startTimestamp?', {
       templateUrl: '/views/block_list.html',
-      title: 'Reddcoin Blocks solved '
+      title: 'Cannacoin Blocks solved '
     }).
     when('/address/:addrStr', {
       templateUrl: '/views/address.html',
-      title: 'Reddcoin Address '
+      title: 'Cannacoin Address '
     }).
     when('/status', {
       templateUrl: '/views/status.html',
